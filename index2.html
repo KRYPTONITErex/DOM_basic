@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="headd">
+        <h1 id="heading">WELCOME FROM DOM BASIC</h1>
+        <p>HellWorld</p>
+    </div>
+
+    <div class="blog">
+        <h1>this is a blog</h1>
+        <p>this is blog desc</p>
+    </div>
+
+    <script>
+        // let head = document.getElementById('heading')
+        // let blg = document.getElementsByClassName('blog')[0]
+
+        // console.log(blg)
+
+        // console.log('this is heading node type: ' + head.nodeType)
+        // console.log('this is heading node type: ' + head.nodeName)
+
+        // let cloneHead = head.cloneNode(true)
+
+        // let cloneBLOG = blg.cloneNode(true)
+
+        // console.log(cloneBLOG)
+        // console.log(head)
+        // console.log(cloneHead)
+
+        let heading = document.getElementById('heading')
+        let header = document.getElementsByClassName("headd")[0]
+        console.log(header.children)
+        console.log(heading.previousElementSibling)
+
+
+    </script>
+</body>
+</html>

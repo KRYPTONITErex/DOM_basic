@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="titleh1">this is h1 title</h1>
+
+    <ul id="list">
+        <li>
+            <h4 id="title" class="LP">how to select a html element using getElementByID method.</h4>
+        </li>
+        <li>
+            <h2 id="userName" class="LP"> Lwin Phyo</h2>
+        </li>
+        <li>
+            <h3 id="book" class=" LP"> Note Book </h3>
+        </li>
+    </ul>
+
+
+
+    <script>
+
+        //     let itemCollection = document.getElementsByClassName("LP")
+
+        //    Array.from(itemCollection).forEach((LP)=>console.log((LP)))
+
+
+     // console.log( document.querySelector('#userName'))
+     // console.log( document.querySelector(".LP"))
+
+     // console.log( document.querySelector('ul li:nth-child(2) .LP'))
+
+        let noteList = document.querySelectorAll('.LP')// give back array
+        // console.log(noteList[1])
+        // noteList.forEach((nl)=>console.log(nl))
+        // for(let i=0; i<noteList.length; i++)console.log(noteList[i])
+
+
+        let title = document.getElementById('titleh1')
+        console.log(title.textContent)
+        title.textContent = 'This is UPDATED TITLE'
+        title.textContent = title.textContent + ' new'
+        title.textContent += ' WORDS'
+
+        let List = document.getElementById("list")
+
+        List.innerHTML = "<p>This is VERY NEW LSIT</p>"
+        List.innerHTML += "<li>LIST ITEM FIVE</li>"
+        
+        console.log(List.innerHTML)
+
+
+    </script>
+    
+</body>
+</html>
